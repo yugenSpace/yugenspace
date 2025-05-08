@@ -3,7 +3,7 @@ name: Deploy Next.js PWA to GitHub Pages
 on:
   push:
     branches:
-      - master
+      - github
 permissions:
   contents: write
 
