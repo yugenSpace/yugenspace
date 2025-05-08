@@ -5,6 +5,7 @@ import Link from "next/link";
 
 import { motion } from "framer-motion";
 import { Button } from "../ui/Button";
+import { ASSET_PREFIX } from "@/constant/config.constant";
 
 export default function AboutSection() {
   return (
@@ -31,7 +32,7 @@ export default function AboutSection() {
               monitoring, using advanced satellites and developing smart
               analysis systems to democratize earth observation.
             </p>
-            <blockquote className="glass-quote-border mb-8">
+            <blockquote className="border-l-4 border-blue-500 pl-6 italic text-xl font-display bg-white/5 backdrop-blur-sm p-4 rounded-r-lg mb-8">
               {`Grounded in Earth, Elevated by Space`}
             </blockquote>
             <Button variant="glass">
@@ -48,7 +49,7 @@ export default function AboutSection() {
           >
             <div className="glass-image-container">
               <Image
-                src="/placeholder.svg?height=300&width=300"
+                 src={`${ASSET_PREFIX}/image/img_rectangle_5.png`}
                 width={300}
                 height={300}
                 alt="Primary Image"
@@ -57,7 +58,7 @@ export default function AboutSection() {
             </div>
             <div className="glass-image-container">
               <Image
-                src="/placeholder.svg?height=300&width=300"
+                 src={`${ASSET_PREFIX}/image/img_rectangle_6.png`}
                 width={300}
                 height={300}
                 alt="Secondary Image"
@@ -66,7 +67,7 @@ export default function AboutSection() {
             </div>
             <div className="glass-image-container col-span-2">
               <Image
-                src="/placeholder.svg?height=300&width=600"
+                 src={`${ASSET_PREFIX}/image/img_rectangle_8.png`}
                 width={600}
                 height={300}
                 alt="Tertiary Image"

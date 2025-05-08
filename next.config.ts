@@ -1,9 +1,12 @@
 // next.config.js
 /** @type {import('next').NextConfig} */
 
-const isGithub = false;
+const isGithub = true;
 const nextConfig = {
   assetPrefix: isGithub ? "/yugenspace" : "",
+  env: {
+    ASSET_PREFIX: isGithub ? "/yugenspace" : "",
+  },
   output: isGithub ? "export" : undefined,
   basePath: isGithub ? "/yugenspace" : "",
   trailingSlash: true,

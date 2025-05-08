@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Github, Linkedin, Twitter } from "lucide-react";
+import { APP_CONFIG } from "@/constant/config.constant";
 
 export default function Footer() {
   return (
@@ -10,17 +11,17 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="space-y-4">
               <Link href="/" className="flex items-center gap-2">
-                <div className="relative h-8 w-8 overflow-hidden rounded-full glass-icon">
+                <div className="relative h-12 w-52">
                   <Image
-                    src="/logo.png"
+                    src={APP_CONFIG.APP_LOGO}
                     fill
                     alt="Yugen Space Logo"
                     className="object-cover"
                   />
                 </div>
-                <span className="font-display text-lg tracking-wider">
+                {/* <span className="font-display text-lg tracking-wider">
                   yugen space
-                </span>
+                </span> */}
               </Link>
               <p className="text-sm text-white/70 max-w-xs">
                 Leveraging advances in space sciences to tackle global soil

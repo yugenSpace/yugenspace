@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { ASSET_PREFIX } from "@/constant/config.constant";
 
 export default function AnalysisSection() {
   return (
@@ -57,10 +58,10 @@ export default function AnalysisSection() {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-2xl blur-xl opacity-20"></div>
-            <div className="glass-panel p-1 rounded-2xl relative">
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-3xl blur-xl opacity-20"></div>
+            <div className="glass-panel p-1 rounded-3xl relative">
               <Image
-                src="/placeholder.svg?height=500&width=600"
+                src={`${ASSET_PREFIX}/image/img_rectangle_9.png`}
                 width={600}
                 height={500}
                 alt="Soil Analysis"

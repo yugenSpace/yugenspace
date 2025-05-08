@@ -5,6 +5,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { Button } from "../ui/Button";
+import { APP_CONFIG } from "@/constant/config.constant";
+import { PAGE_ROUTES } from "@/constant/route.constant";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -26,9 +28,9 @@ export default function Header() {
     >
       <div className="container flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 z-10">
-          <div className="relative h-10 w-30">
+          <div className="relative h-10 w-52">
             <Image
-              src="/image/img_header_logo.png"
+              src={APP_CONFIG.APP_LOGO}
               fill
               alt="Yugen Space Logo"
               className="object-cover"
@@ -40,18 +42,27 @@ export default function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex gap-8">
-          <Link href="/" className="nav-link">
+        <nav className="hidden md:flex gap-8 font-display text-sm font-medium uppercase tracking-widest transition-colors  relative">
+          <Link href="/" className="hover:text-blue-400">
             Home
           </Link>
-          <Link href="#features" className="nav-link">
-            Technology
+          <Link
+            href={`#${PAGE_ROUTES.FEATURES.id}`}
+            className="hover:text-blue-400"
+          >
+            {PAGE_ROUTES.FEATURES.title}
           </Link>
-          <Link href="#about" className="nav-link">
-            About
+          <Link
+            href={`#${PAGE_ROUTES.ABOUT.id}`}
+            className="hover:text-blue-400"
+          >
+            {PAGE_ROUTES.ABOUT.title}
           </Link>
-          <Link href="#contact" className="nav-link">
-            Contact
+          <Link
+            href={`#${PAGE_ROUTES.CONTACT.id}`}
+            className="hover:text-blue-400"
+          >
+            {PAGE_ROUTES.CONTACT.title}
           </Link>
         </nav>
 
@@ -71,25 +82,25 @@ export default function Header() {
         {isMobileMenuOpen && (
           <div className="fixed inset-0 z-0 glass-panel-dark flex flex-col items-center justify-center gap-8">
             <Link
-              href="/features"
-              className="nav-link-mobile"
+              href={`#${PAGE_ROUTES.FEATURES.id}`}
+              className="font-display text-2xl font-medium uppercase tracking-widest transition-colors hover:text-blue-400;"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Technology
+              {PAGE_ROUTES.FEATURES.title}
             </Link>
             <Link
-              href="/about"
-              className="nav-link-mobile"
+              href={`#${PAGE_ROUTES.ABOUT.id}`}
+              className="font-display text-2xl font-medium uppercase tracking-widest transition-colors hover:text-blue-400;"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              About
+              {PAGE_ROUTES.ABOUT.title}
             </Link>
             <Link
-              href="/contact"
-              className="nav-link-mobile"
+              href={`#${PAGE_ROUTES.CONTACT.id}`}
+              className="font-display text-2xl font-medium uppercase tracking-widest transition-colors hover:text-blue-400;"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Contact
+              {PAGE_ROUTES.CONTACT.title}
             </Link>
             <Button
               variant="glass"
