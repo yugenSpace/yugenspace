@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 // import FeatureCard from "../ui/feature-card";
 import SpaceParticles from "../ui/space-particles";
 import StarsBackground from "../ui/stars-background";
-import TitleTile from "../ui/TitleTile";
 import { ASSET_PREFIX } from "@/constant/config.constant";
 import FeatureCardImage from "./feature-image-section";
+import PageHeader from "../ui/page-header";
 // import FeatureCardImage from "./feature-image-section";
 // import { ASSET_PREFIX } from "@/constant/config.constant";
 
@@ -30,7 +30,7 @@ export default function FeaturesSection() {
       <StarsBackground count={50} />
 
       <div className="container px-4 md:px-6 relative z-10">
-        <TitleTile
+        <PageHeader
           // badgeText="Proprietary Technology"
           // showBorder={true}
           title={"Hyperspectral Imaging"}

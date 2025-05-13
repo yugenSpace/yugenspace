@@ -22,7 +22,7 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 px-20 py-4 z-50 w-full transition-all duration-300 ${
+      className={`fixed top-0 p-8 md:px-20 py-4 z-50 w-full transition-all duration-300 ${
         isScrolled ? "glass-navbar backdrop-blur-xl" : "bg-transparent py-4"
       }`}
     >

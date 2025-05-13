@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { ASSET_PREFIX } from "@/constant/config.constant";
 import SpaceParticles from "../ui/space-particles";
-import TitleTile from "../ui/TitleTile";
+import PageHeader from "../ui/page-header";
 
 export default function DashboardSection() {
   return (
@@ -13,7 +13,7 @@ export default function DashboardSection() {
 
       <SpaceParticles count={20} color="white" />
 
-      <TitleTile
+      <PageHeader
         title={"Geospatial Analysis"}
         badgeText="Proprietary Technology"
         // description="Our proprietary sensors in space bring you the power of hyperspectral

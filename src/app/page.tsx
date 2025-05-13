@@ -14,12 +14,15 @@ export default function Home() {
       <FeaturesSection />
       <PageHeader
         title="About Yugen Space"
-        subtitle="Learn about our mission to address soil degradation through space technology"
+        description="Learn about our mission to address soil degradation through space technology"
+        color="white"
+        showBorder={true}
       />
       <AboutSection />
       <PageHeader
         title="Contact Us"
-        subtitle="Get in touch to schedule a demo or learn more about our solutions"
+        description="Get in touch to schedule a demo or learn more about our solutions"
+        showBorder={true}
       />
       <ContactSection />
     </div>

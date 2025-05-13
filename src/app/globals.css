@@ -41,11 +41,33 @@ body {
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "NightSpace";
+  src: url("/font/NightSpace.ttf") format("truetype"),
+    url("/font/NightSpace.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Font classes */
 .font-display {
   font-family: "Polaris", system-ui, sans-serif;
 }
 
+/* Apply NightSpace font */
+.font-nightspace {
+  font-family: "NightSpace", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "NightSpace", sans-serif;
+  font-weight: 800;
+}
 /* Beam effects */
 .beam {
   @apply absolute opacity-20 pointer-events-none;

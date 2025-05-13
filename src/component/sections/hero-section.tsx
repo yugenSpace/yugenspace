@@ -54,7 +54,7 @@ export default function HeroSection() {
         >
           {/* <div className="glass-badge mb-6">Space Technology</div> */}
 
-          <h1 className="font-display text-5xl md:text-7xl font-bold tracking-tighter leading-tight mb-6">
+          <h1 className="font-nightspace text-5xl md:text-7xl font-bold tracking-tighter leading-tight mb-6">
             <span className="leading-24 tracking-widest block">Making</span>
             <span className="leading-24 tracking-widest block text-primary">Earth Observation</span>
             <motion.span
