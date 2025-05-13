@@ -54,7 +54,9 @@ export default function HeroSection() {
         >
           <h1 className="font-nightspace text-3xl sm:text-4xl md:text-7xl font-bold tracking-tighter leading-tight mb-6">
             <span className="leading-24 tracking-widest block">Making</span>
-            <span className="leading-24 tracking-widest block text-primary">Earth Observation</span>
+            <span className="leading-24 tracking-widest block text-primary">
+              Earth Observation
+            </span>
             <motion.span
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -75,7 +77,7 @@ export default function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <Button size="lg" variant="glow" className="text-black font-medium">
               <Link href="https://docs.google.com/forms/d/1S5d45yOn69_FFaIwPf51gjLZ6ZHdawmwaZThjRo_32s/viewform?edit_requested=true">
-                BOOK A DEMO
+                BOOK DEMO
               </Link>
             </Button>
             <Button size="lg" variant="glass">

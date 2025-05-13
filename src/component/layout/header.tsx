@@ -43,31 +43,33 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-8 font-display text-sm font-medium uppercase tracking-widest transition-colors  relative">
-          <Link href="/" className="hover:text-blue-400">
+          <Link href="/" className="hover:text-blue-400 font-nightspace leading-tight font-bold">
             Home
           </Link>
           <Link
             href={`#${PAGE_ROUTES.FEATURES.id}`}
-            className="hover:text-blue-400"
+            className="hover:text-blue-400 font-nightspace leading-tight font-bold"
           >
             {PAGE_ROUTES.FEATURES.title}
           </Link>
           <Link
             href={`#${PAGE_ROUTES.ABOUT.id}`}
-            className="hover:text-blue-400"
+            className="hover:text-blue-400 font-nightspace leading-tight font-bold"
           >
             {PAGE_ROUTES.ABOUT.title}
           </Link>
           <Link
             href={`#${PAGE_ROUTES.CONTACT.id}`}
-            className="hover:text-blue-400"
+            className="hover:text-blue-400 font-nightspace leading-tight font-bold"
           >
             {PAGE_ROUTES.CONTACT.title}
           </Link>
         </nav>
 
-        <Button variant="glass" className="hidden md:inline-flex">
-          <Link href="/contact">Book Demo</Link>
+        <Button variant="glow" className="hidden md:inline-flex text-black">
+          <Link href="https://docs.google.com/forms/d/1S5d45yOn69_FFaIwPf51gjLZ6ZHdawmwaZThjRo_32s/viewform?edit_requested=true">
+            Book Demo
+          </Link>
         </Button>
 
         {/* Mobile Menu Button */}
@@ -103,11 +105,13 @@ export default function Header() {
               {PAGE_ROUTES.CONTACT.title}
             </Link>
             <Button
-              variant="glass"
+              variant="glow"
               className="mt-4"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              <Link href="/contact">Book Demo</Link>
+              <Link href="https://docs.google.com/forms/d/1S5d45yOn69_FFaIwPf51gjLZ6ZHdawmwaZThjRo_32s/viewform?edit_requested=true">
+                BOOK DEMO
+              </Link>
             </Button>
           </div>
         )}
