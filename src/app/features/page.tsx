@@ -1,4 +1,4 @@
-import AnalysisSection from "@/component/sections/analysis-section";
+import AnalysisSection from "@/component/sections/dashboard-section";
 import FeaturesSection from "@/component/sections/features-section";
 import PageHeader from "@/component/ui/page-header";
 

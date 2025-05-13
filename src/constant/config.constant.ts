@@ -1,4 +1,4 @@
-export const ASSET_PREFIX = process.env.ASSET_PREFIX || "";
+export const ASSET_PREFIX = ""; //process.env.ASSET_PREFIX || "";
 export const APP_CONFIG = {
   APP_NAME: "yugenspace",
   APP_VERSION: "0.0.1",
