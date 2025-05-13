@@ -7,7 +7,7 @@ import PageHeader from "@/component/ui/page-header";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center flex-col bg-black text-white">
+    <div className="w-full m-0 p-0 overflow-x-hidden flex min-h-screen items-center justify-center flex-col bg-black text-white">
       <HeroSection />
 
       <AnalysisSection />

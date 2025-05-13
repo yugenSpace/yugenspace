@@ -18,21 +18,23 @@ export default function PageHeader({
   color = "transparent",
 }: PageHeaderProps) {
   return (
-    <div className="relative pt-32 pb-16 overflow-hidden">
+    <div className="relative pt-16 sm:pt-24 md:pt-32 pb-8 sm:pb-12 md:pb-16 overflow-hidden">
       <div className="beam beam-1"></div>
-      <div className="container px-4 md:px-6 relative z-10">
+      <div className="container px-4 sm:px-6 md:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center max-w-4xl mx-auto"
+          className="text-center max-w-xl sm:max-w-2xl md:max-w-4xl mx-auto"
         >
-          <div className={`text-center mb-16`}>
+          <div className={`text-center mb-8 sm:mb-12 md:mb-16`}>
             {badgeText && (
-              <div className="glass-badge mx-auto mb-4">{badgeText}</div>
+              <div className="glass-badge mx-auto mb-4 text-sm sm:text-base md:text-lg">
+                {badgeText}
+              </div>
             )}
             {title && (
-              <h2 className="text-4xl font-bold sm:text-2xl md:text-5xl mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-6 md:mb-8">
                 <span
                   className={`tracking-wider bg-clip-text text-${color} bg-gradient-to-r from-blue-400 to-cyan-300`}
                 >
@@ -42,11 +44,11 @@ export default function PageHeader({
             )}
             {showBorder && (
               <div
-                className={`w-24 h-1 bg-gradient-to-r from-blue-400 to-cyan-300 mx-auto mb-6`}
+                className={`w-16 sm:w-20 md:w-24 h-1 bg-gradient-to-r from-blue-400 to-cyan-300 mx-auto mb-4 sm:mb-6 md:mb-8`}
               ></div>
             )}
             {description && (
-              <p className="max-w-2xl mx-auto text-lg text-white/70">
+              <p className="max-w-md sm:max-w-lg md:max-w-2xl mx-auto text-sm sm:text-base md:text-lg text-white/70">
                 {description}
               </p>
             )}

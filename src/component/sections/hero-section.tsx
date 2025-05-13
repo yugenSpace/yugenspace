@@ -50,11 +50,9 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="max-w-3xl"
+          className="max-w-full md:max-w-3xl text-center md:text-left"
         >
-          {/* <div className="glass-badge mb-6">Space Technology</div> */}
-
-          <h1 className="font-nightspace text-5xl md:text-7xl font-bold tracking-tighter leading-tight mb-6">
+          <h1 className="font-nightspace text-3xl sm:text-4xl md:text-7xl font-bold tracking-tighter leading-tight mb-6">
             <span className="leading-24 tracking-widest block">Making</span>
             <span className="leading-24 tracking-widest block text-primary">Earth Observation</span>
             <motion.span
@@ -67,14 +65,14 @@ export default function HeroSection() {
             </motion.span>
           </h1>
 
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mb-6"></div>
+          <div className="w-16 sm:w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mb-6 mx-auto md:mx-0"></div>
 
-          <p className="text-xl text-white/80 max-w-xl mb-8">
+          <p className="text-base sm:text-lg md:text-xl text-white/80 max-w-lg md:max-w-xl mb-8 mx-auto md:mx-0">
             We do the complex satellite data processing. You get the valuable
             insights
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <Button size="lg" variant="glow" className="text-black font-medium">
               <Link href="https://docs.google.com/forms/d/1S5d45yOn69_FFaIwPf51gjLZ6ZHdawmwaZThjRo_32s/viewform?edit_requested=true">
                 BOOK A DEMO
@@ -92,7 +90,7 @@ export default function HeroSection() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 1 }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10"
+        className="hidden md:block absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10"
       >
         <div className="flex flex-col items-center">
           <span className="text-xs text-white/60 mb-2 font-display">

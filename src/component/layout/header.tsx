@@ -22,13 +22,13 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 p-8 md:px-20 py-4 z-50 w-full transition-all duration-300 ${
+      className={`fixed top-0 p-4 sm:p-8 md:px-20 py-4 z-50 w-full transition-all duration-300 ${
         isScrolled ? "glass-navbar backdrop-blur-xl" : "bg-transparent py-4"
       }`}
     >
-      <div className="container flex items-center justify-between">
+      <div className="flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 z-10">
-          <div className="relative h-10 w-52">
+          <div className="relative h-10 w-32 md:w-52">
             <Image
               src={APP_CONFIG.APP_LOGO}
               fill

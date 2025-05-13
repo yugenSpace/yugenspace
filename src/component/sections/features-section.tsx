@@ -23,7 +23,7 @@ export default function FeaturesSection() {
   };
 
   return (
-    <section id="features" className="py-24 relative overflow-hidden">
+    <section id="features" className="py-12 md:py-24 relative overflow-hidden">
       <div className="beam beam-1"></div>
       <div className="beam beam-2"></div>
       <SpaceParticles count={30} color="#f9f871" />
@@ -31,8 +31,6 @@ export default function FeaturesSection() {
 
       <div className="container px-4 md:px-6 relative z-10">
         <PageHeader
-          // badgeText="Proprietary Technology"
-          // showBorder={true}
           title={"Hyperspectral Imaging"}
           description="Our proprietary sensors in space bring you the power of
             hyperspectral imaging for advanced soil analysis"
@@ -42,7 +40,7 @@ export default function FeaturesSection() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.2 }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
         >
           <FeatureCardImage
             imageSlug={`${ASSET_PREFIX}/image/soil-fall.png`}
