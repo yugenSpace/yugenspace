@@ -6,7 +6,7 @@ export default function ContactPage() {
     <div className="flex min-h-screen w-full items-center flex-col bg-black text-white">
       <PageHeader
         title="Contact Us"
-        subtitle="Get in touch to schedule a demo or learn more about our solutions"
+        description="Get in touch to schedule a demo or learn more about our solutions"
       />
       <ContactSection />
     </div>

@@ -6,7 +6,7 @@ export default function AboutPage() {
     <div className="w-full h-auto items-center flex min-h-screen flex-col bg-black text-white">
       <PageHeader
         title="About Yugen Space"
-        subtitle="Learn about our mission to address soil degradation through space technology"
+        description="Learn about our mission to address soil degradation through space technology"
       />
 
       <AboutSection />

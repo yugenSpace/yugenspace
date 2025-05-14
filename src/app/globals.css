@@ -36,7 +36,7 @@ body {
 /* google font */
 @font-face {
   font-family: "Polaris";
-  src: url("/fonts/Polaris.woff2") format("woff2");
+  src: url("/yugenspace/fonts/PolarisRegular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -44,8 +44,8 @@ body {
 
 @font-face {
   font-family: "NightSpace";
-  src: url("/font/NightSpace.ttf") format("truetype"),
-    url("/font/NightSpace.otf") format("opentype");
+  src: url("/yugenspace/font/NightSpace.ttf") format("truetype"),
+    url("/yugenspace/font/NightSpace.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
