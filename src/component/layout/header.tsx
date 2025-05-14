@@ -45,25 +45,25 @@ export default function Header() {
         <nav className="hidden md:flex gap-8 font-display text-sm font-medium uppercase tracking-widest transition-colors  relative">
           <Link
             href="/"
-            className="hover:text-blue-400 font-nightspace leading-tight font-bold"
+            className="hover:text-blue-400 leading-tight font-bold"
           >
             Home
           </Link>
           <Link
             href={`#${PAGE_ROUTES.FEATURES.id}`}
-            className="hover:text-blue-400 font-nightspace leading-tight font-bold"
+            className="hover:text-blue-400 leading-tight font-bold"
           >
             {PAGE_ROUTES.FEATURES.title}
           </Link>
           <Link
             href={`#${PAGE_ROUTES.ABOUT.id}`}
-            className="hover:text-blue-400 font-nightspace leading-tight font-bold"
+            className="hover:text-blue-400 leading-tight font-bold"
           >
             {PAGE_ROUTES.ABOUT.title}
           </Link>
           <Link
             href={`#${PAGE_ROUTES.CONTACT.id}`}
-            className="hover:text-blue-400 font-nightspace leading-tight font-bold"
+            className="hover:text-blue-400 leading-tight font-bold"
           >
             {PAGE_ROUTES.CONTACT.title}
           </Link>

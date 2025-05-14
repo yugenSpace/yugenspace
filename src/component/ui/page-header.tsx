@@ -19,11 +19,11 @@ export default function PageHeader({
 }: PageHeaderProps) {
   return (
     <div className="relative pt-16 sm:pt-24 md:pt-32 pb-8 sm:pb-12 md:pb-16 overflow-hidden">
-      <div className="beam beam-1"></div>
+      {/* <div className="beam beam-1"></div> */}
       <div className="container px-4 sm:px-6 md:px-8 relative z-10">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 10 }}
           transition={{ duration: 0.8 }}
           className="text-center max-w-xl sm:max-w-2xl md:max-w-4xl mx-auto"
         >
@@ -34,9 +34,9 @@ export default function PageHeader({
               </div>
             )}
             {title && (
-              <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-6 md:mb-8">
+              <h2 className="font-display text-2xl font-bold tracking-tight sm:text-5xl md:text-6xl mb-6">
                 <span
-                  className={`tracking-wider bg-clip-text text-${color} bg-gradient-to-r from-blue-400 to-cyan-300`}
+                  className={`bg-clip-text text-${color} bg-gradient-to-r from-blue-400 to-cyan-300`}
                 >
                   {title}
                 </span>

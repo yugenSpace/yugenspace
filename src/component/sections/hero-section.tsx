@@ -53,16 +53,16 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="max-w-full md:max-w-3xl text-center md:text-left"
         >
-          <h1 className="font-nightspace text-3xl sm:text-4xl md:text-7xl font-bold tracking-tighter leading-tight mb-6">
-            <span className="leading-24 tracking-widest block">Making</span>
-            <span className="leading-24 tracking-widest block text-primary">
+          <h1 className="font-nightspace text-3xl sm:text-4xl md:text-5xl font-bold tracking-tighter leading-tight mb-6">
+            <span className="leading-20 tracking-widest block">Making</span>
+            <span className="leading-20 tracking-widest block text-primary">
               Earth Observation
             </span>
             <motion.span
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.8 }}
-              className="leading-24 tracking-widest block bg-clip-text text-transparent bg-gradient-to-r from-cyan-600 to-cyan-300"
+              className="leading-20 tracking-widest block bg-clip-text text-transparent bg-gradient-to-r from-cyan-600 to-cyan-300"
             >
               Simple
             </motion.span>

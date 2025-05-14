@@ -10,19 +10,20 @@ import { PAGE_ROUTES } from "@/constant/route.constant";
 export default function DashboardSection() {
   return (
     <section
-      className="py-12 md:py-24 relative overflow-hidden"
+      // className="py-12 md:py-24 relative overflow-hidden"
       id={PAGE_ROUTES.ANALYSIS.id}
+      className="py-24 relative overflow-hidden"
     >
-      <div className="beam beam-3"></div>
-
-      <SpaceParticles count={20} color="white" />
-
+      {/* <div className="beam beam-5"></div> */}
+      {/* <SpaceBeam beams={[5]} /> */}
+      <SpaceParticles count={20} color="#f9f871" />
+      {/* <StarsBackground /> */}
+      {/* <SpaceWaves /> */}
       <PageHeader
         title={"Geospatial Analysis"}
         badgeText="Proprietary Technology"
-        // description="Our proprietary sensors in space bring you the power of hyperspectral
-        //   imaging for advanced soil analysis"
-        // showBorder={true}
+        // description="Analyzing satellite images now will be as simple as a Google search."
+        showBorder={true}
       />
 
       <div className="container px-4 md:px-6 relative z-10">
@@ -38,7 +39,7 @@ export default function DashboardSection() {
               Vision Platform
             </h2>
             <div className="w-16 sm:w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mb-4 md:mb-6 mx-auto md:mx-0"></div>
-            <p className="text-base sm:text-lg md:text-xl text-white/70 mb-6">
+            <p className="text-base sm:text-lg md:text-xl text-white/80 mb-6 leading-relaxed">
               Analyzing satellite images now will be as simple as a Google
               search.
             </p>

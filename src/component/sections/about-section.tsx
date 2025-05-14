@@ -10,7 +10,7 @@ import { ASSET_PREFIX } from "@/constant/config.constant";
 export default function AboutSection() {
   return (
     <section id="about" className="py-24 relative overflow-hidden">
-      <div className="beam beam-4"></div>
+      {/* <div className="beam beam-4"></div> */}
 
       <div className="container px-4 md:px-6 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
