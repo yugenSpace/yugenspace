@@ -22,8 +22,8 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 p-4 sm:p-8 md:px-20 py-4 z-50 w-full transition-all duration-300 ${
-        isScrolled ? "glass-navbar backdrop-blur-xl" : "bg-transparent py-4"
+      className={`fixed top-0 p-4 md:p-6 md:px-20 z-50 w-full transition-all duration-300 ${
+        isScrolled ? "backdrop-blur-3xl" : "bg-transparent"
       }`}
     >
       <div className="flex items-center justify-between">
@@ -36,9 +36,6 @@ export default function Header() {
               className="object-cover"
             />
           </div>
-          {/* <span className="font-display text-xl tracking-wider">
-            yugen space
-          </span> */}
         </Link>
 
         {/* Desktop Navigation */}
