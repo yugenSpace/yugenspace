@@ -34,7 +34,7 @@ export default function PageHeader({
               </div>
             )}
             {title && (
-              <h2 className="font-display text-2xl font-bold tracking-tight sm:text-5xl md:text-6xl mb-6">
+              <h2 className="text-2xl font-bold tracking-tight sm:text-5xl md:text-6xl mb-6">
                 <span
                   className={`bg-clip-text text-${color} bg-gradient-to-r from-blue-400 to-cyan-300`}
                 >

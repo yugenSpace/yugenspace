@@ -4,6 +4,7 @@ import { Satellite, LineChart, DollarSign } from "lucide-react";
 import { motion } from "framer-motion";
 import FeatureCard from "../ui/feature-card";
 import PageHeader from "../ui/page-header";
+import SpaceParticles from "../ui/space-particles";
 
 export default function FeaturesSectionOld() {
   const container = {
@@ -20,7 +21,7 @@ export default function FeaturesSectionOld() {
     <section id="features" className="py-24 relative overflow-hidden">
       <div className="beam beam-1"></div>
       <div className="beam beam-2"></div>
-
+      <SpaceParticles count={20} color="#f9f871" />
       <div className="container px-4 md:px-6 relative z-10">
         <PageHeader
           title={"Hyperspectral Imaging"}
