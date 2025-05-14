@@ -5,10 +5,14 @@ import { motion } from "framer-motion";
 import { ASSET_PREFIX } from "@/constant/config.constant";
 import SpaceParticles from "../ui/space-particles";
 import PageHeader from "../ui/page-header";
+import { PAGE_ROUTES } from "@/constant/route.constant";
 
 export default function DashboardSection() {
   return (
-    <section className="py-12 md:py-24 relative overflow-hidden">
+    <section
+      className="py-12 md:py-24 relative overflow-hidden"
+      id={PAGE_ROUTES.ANALYSIS.id}
+    >
       <div className="beam beam-3"></div>
 
       <SpaceParticles count={20} color="white" />
@@ -39,27 +43,30 @@ export default function DashboardSection() {
               search.
             </p>
 
-            <div className="space-y-4 md:space-y-6">
-              <div className="flex flex-col md:flex-row items-center md:items-start gap-4">
-                <div className="h-10 w-10 md:h-12 md:w-12 rounded-full bg-gradient-to-br from-primary to-tertiary flex items-center justify-center shadow-lg shadow-primary/20 text-blue-500 font-bold text-xl md:text-3xl">
-                  1.
+            <div className="space-y-6">
+              <div className="flex items-start gap-4">
+                <div className="h-12 w-12 rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center shadow-lg shadow-blue-500/20 text-black font-bold text-lg">
+                  1
                 </div>
-                <div>
-                  <h3 className="font-display text-lg md:text-xl font-medium mb-2">
+                <div className="text-start">
+                  <h3 className="font-display text-lg md:text-xl md:font-medium mb-2">
                     Complex Processing
                   </h3>
-                  <p className="text-white/70 text-sm md:text-base">{`We do the complex satellite data processing so you don't have to.`}</p>
+                  <p className="text-base md:text-lg text-white/70">
+                    {`   We do the complex satellite data processing so you don't
+                    have to.`}
+                  </p>
                 </div>
               </div>
-              <div className="flex flex-col md:flex-row items-center md:items-start gap-4">
-                <div className="h-10 w-10 md:h-12 md:w-12 rounded-full bg-gradient-to-br from-primary to-tertiary flex items-center justify-center shadow-lg shadow-primary/20 text-blue-500 font-bold text-xl md:text-3xl">
-                  2.
+              <div className="flex items-start gap-4">
+                <div className="h-12 w-12 rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center shadow-lg shadow-blue-500/20 text-black font-bold text-lg">
+                  2
                 </div>
-                <div>
-                  <h3 className="font-display text-lg md:text-xl font-medium mb-2">
+                <div className="text-start">
+                  <h3 className="font-display text-lg md:text-xl md:font-medium mb-2">
                     Valuable Insights
                   </h3>
-                  <p className="text-white/70 text-sm md:text-base">
+                  <p className="text-base md:text-lg text-white/70">
                     You get the valuable insights delivered in an
                     easy-to-understand format.
                   </p>

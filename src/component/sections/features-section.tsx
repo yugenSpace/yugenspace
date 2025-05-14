@@ -54,7 +54,7 @@ export default function FeaturesSection() {
             description="Keep track of your soil's health with regular updates and analysis"
           />
           <FeatureCardImage
-            imageSlug={`${ASSET_PREFIX}/image/fertilizer-bag.png`}
+            imageSlug={`${ASSET_PREFIX}/image/save-money.png`}
             title="Save expenditure on fertilizers"
             description="Optimize your fertilizer usage based on precise soil needs"
           />

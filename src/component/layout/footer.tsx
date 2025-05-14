@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Github, Linkedin, Twitter } from "lucide-react";
 import { APP_CONFIG } from "@/constant/config.constant";
+import { PAGE_ROUTES } from "@/constant/route.constant";
 
 export default function Footer() {
   return (
@@ -10,7 +11,10 @@ export default function Footer() {
         <div className="container px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="space-y-4">
-              <Link href="/" className="flex items-center gap-2">
+              <Link
+                href={PAGE_ROUTES.HOME.path}
+                className="flex items-center gap-2"
+              >
                 <div className="relative h-12 w-52">
                   <Image
                     src={APP_CONFIG.APP_LOGO}
@@ -34,7 +38,7 @@ export default function Footer() {
               <ul className="space-y-2">
                 <li>
                   <Link
-                    href="/features"
+                    href={`#${PAGE_ROUTES.ANALYSIS.id}`}
                     className="text-sm text-white/70 hover:text-white transition-colors"
                   >
                     Soil Analysis
@@ -42,7 +46,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/features"
+                    href={`#${PAGE_ROUTES.FEATURES.id}`}
                     className="text-sm text-white/70 hover:text-white transition-colors"
                   >
                     Crop Yield Prediction
@@ -50,7 +54,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/features"
+                    href={`#${PAGE_ROUTES.FEATURES.id}`}
                     className="text-sm text-white/70 hover:text-white transition-colors"
                   >
                     Fertilizer Optimization
@@ -64,7 +68,7 @@ export default function Footer() {
               <ul className="space-y-2">
                 <li>
                   <Link
-                    href="/about"
+                    href={`#${PAGE_ROUTES.ABOUT.id}`}
                     className="text-sm text-white/70 hover:text-white transition-colors"
                   >
                     About Us
@@ -72,7 +76,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/contact"
+                    href={`#${PAGE_ROUTES.CONTACT.id}`}
                     className="text-sm text-white/70 hover:text-white transition-colors"
                   >
                     Contact

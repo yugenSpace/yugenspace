@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import Link from "next/link";
 import { Button } from "@/component/ui/Button";
 import { motion } from "framer-motion";
+import { PAGE_ROUTES } from "@/constant/route.constant";
 
 export default function HeroSection() {
   // const [isLoaded, setIsLoaded] = useState(false);
@@ -76,12 +77,14 @@ export default function HeroSection() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <Button size="lg" variant="glow" className="text-black font-medium">
-              <Link href="https://docs.google.com/forms/d/1S5d45yOn69_FFaIwPf51gjLZ6ZHdawmwaZThjRo_32s/viewform?edit_requested=true">
-                BOOK DEMO
+              <Link href={PAGE_ROUTES.DEMO.path} target="_blank">
+                {PAGE_ROUTES.DEMO.title}
               </Link>
             </Button>
             <Button size="lg" variant="glass">
-              <Link href="/features">EXPLORE TECHNOLOGY</Link>
+              <Link href={`#${PAGE_ROUTES.FEATURES.id}`}>
+                EXPLORE TECHNOLOGY
+              </Link>
             </Button>
           </div>
         </motion.div>

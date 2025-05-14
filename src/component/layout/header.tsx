@@ -43,7 +43,10 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-8 font-display text-sm font-medium uppercase tracking-widest transition-colors  relative">
-          <Link href="/" className="hover:text-blue-400 font-nightspace leading-tight font-bold">
+          <Link
+            href="/"
+            className="hover:text-blue-400 font-nightspace leading-tight font-bold"
+          >
             Home
           </Link>
           <Link
@@ -67,9 +70,7 @@ export default function Header() {
         </nav>
 
         <Button variant="glow" className="hidden md:inline-flex text-black">
-          <Link href="https://docs.google.com/forms/d/1S5d45yOn69_FFaIwPf51gjLZ6ZHdawmwaZThjRo_32s/viewform?edit_requested=true">
-            Book Demo
-          </Link>
+          <Link href={PAGE_ROUTES.DEMO.path}>Book Demo</Link>
         </Button>
 
         {/* Mobile Menu Button */}
@@ -84,7 +85,7 @@ export default function Header() {
         {isMobileMenuOpen && (
           <div className="fixed inset-0 z-0 glass-panel-dark flex flex-col items-center justify-center gap-8">
             <Link
-              href={`#${PAGE_ROUTES.FEATURES.id}`}
+              href={PAGE_ROUTES.DEMO.path}
               className="font-display text-2xl font-medium uppercase tracking-widest transition-colors hover:text-blue-400;"
               onClick={() => setIsMobileMenuOpen(false)}
             >
@@ -109,9 +110,7 @@ export default function Header() {
               className="mt-4"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              <Link href="https://docs.google.com/forms/d/1S5d45yOn69_FFaIwPf51gjLZ6ZHdawmwaZThjRo_32s/viewform?edit_requested=true">
-                BOOK DEMO
-              </Link>
+              <Link href={`#${PAGE_ROUTES.FEATURES.id}`}>BOOK DEMO</Link>
             </Button>
           </div>
         )}
