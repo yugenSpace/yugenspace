@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Github, Linkedin, Twitter } from "lucide-react";
+import { Linkedin } from "lucide-react";
 import { APP_CONFIG } from "@/constant/config.constant";
 import { PAGE_ROUTES } from "@/constant/route.constant";
 
@@ -96,13 +96,13 @@ export default function Footer() {
             <div>
               <h3 className="font-display text-lg mb-4">Connect</h3>
               <div className="flex space-x-4">
-                <Link
+                {/* <Link
                   href="#"
                   className="glass-icon p-2 rounded-full hover:bg-white/10 transition-colors"
                 >
                   <Twitter size={18} />
                   <span className="sr-only">Twitter</span>
-                </Link>
+                </Link> */}
                 <Link
                   href="#"
                   className="glass-icon p-2 rounded-full hover:bg-white/10 transition-colors"
@@ -110,13 +110,13 @@ export default function Footer() {
                   <Linkedin size={18} />
                   <span className="sr-only">LinkedIn</span>
                 </Link>
-                <Link
+                {/* <Link
                   href="#"
                   className="glass-icon p-2 rounded-full hover:bg-white/10 transition-colors"
                 >
                   <Github size={18} />
                   <span className="sr-only">GitHub</span>
-                </Link>
+                </Link> */}
               </div>
               <div className="mt-4">
                 <p className="text-sm text-white/70">Email:</p>

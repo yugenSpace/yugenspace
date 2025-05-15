@@ -4,9 +4,6 @@ import SpaceParticles from "../ui/space-particles";
 import { ASSET_PREFIX } from "@/constant/config.constant";
 import FeatureCardImage from "../ui/feature-image-section";
 import PageHeader from "../ui/page-header";
-import FeatureImageCard from "../ui/feature-image-card";
-// import FeatureCardImage from "./feature-image-section";
-// import { ASSET_PREFIX } from "@/constant/config.constant";
 
 export default function FeaturesSection() {
   return (
@@ -31,28 +28,12 @@ export default function FeaturesSection() {
             altText="Descriptive text for the image"
           />
           <FeatureCardImage
-            imageSlug={`${ASSET_PREFIX}/image/earth-health.png`}
+            imageSlug={`${ASSET_PREFIX}/image/soil-nutrition.png`}
             title="Monitor Soil Health Regularly"
             description="Keep track of your soil's health with regular updates and comprehensive analysis."
           />
           <FeatureCardImage
             imageSlug={`${ASSET_PREFIX}/image/fertilizer-cost.png`}
-            title="Save on Fertilizer Costs"
-            description="Optimize your fertilizer usage based on precise soil needs, saving money and resources."
-          />
-          <FeatureImageCard
-            imageSlug={`${ASSET_PREFIX}/image/img_rectangle_5.png`}
-            title="Precise Soil Nutrient and Mineral Maps"
-            description="Get a detailed analysis of your soil composition through advanced satellite imaging."
-            altText="Descriptive text for the image"
-          />
-          <FeatureImageCard
-            imageSlug={`${ASSET_PREFIX}/image/img_rectangle_6.png`}
-            title="Monitor Soil Health Regularly"
-            description="Keep track of your soil's health with regular updates and comprehensive analysis."
-          />
-          <FeatureImageCard
-            imageSlug={`${ASSET_PREFIX}/image/img_rectangle_8.png`}
             title="Save on Fertilizer Costs"
             description="Optimize your fertilizer usage based on precise soil needs, saving money and resources."
           />

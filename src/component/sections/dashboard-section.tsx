@@ -14,7 +14,7 @@ export default function DashboardSection() {
       id={PAGE_ROUTES.ANALYSIS.id}
       className="py-24 relative overflow-hidden"
     >
-      {/* <div className="beam beam-5"></div> */}
+      <div className="beam beam-5"></div>
       {/* <SpaceBeam beams={[5]} /> */}
       <SpaceParticles count={20} color="#f9f871" />
       {/* <StarsBackground /> */}

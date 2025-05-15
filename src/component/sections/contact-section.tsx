@@ -39,7 +39,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="text-sm text-white/70">Headquarters:</p>
-                  <p className="text-white">Tübingen, germany</p>
+                  <p className="text-white capitalize">Tübingen, germany</p>
                 </div>
               </div>
             </div>
