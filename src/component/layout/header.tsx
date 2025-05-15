@@ -23,7 +23,7 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 p-4 md:p-6 md:px-20 z-50 w-full transition-all duration-300 ${
-        isScrolled ? "backdrop-blur-3xl" : "bg-transparent"
+        isScrolled ? "md:backdrop-blur-3xl" : "bg-transparent"
       }`}
     >
       <div className="flex items-center justify-between">
@@ -80,7 +80,7 @@ export default function Header() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="fixed inset-0 z-0 glass-panel-dark flex flex-col items-center justify-center gap-8">
+          <div className="fixed top-0 bottom-0 inset-0 z-0 glass-panel-dark flex flex-col items-center justify-center gap-8">
             <Link
               href={PAGE_ROUTES.DEMO.path}
               className="font-display text-2xl font-medium uppercase tracking-widest transition-colors hover:text-blue-400;"
