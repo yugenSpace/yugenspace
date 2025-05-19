@@ -1,11 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 
 import { motion } from "framer-motion";
 import { Button } from "../ui/Button";
-import { ASSET_PREFIX } from "@/constant/config.constant";
+import ImageGallerySlider from "../ui/ImageGallerySlider";
 
 export default function AboutSection() {
   return (
@@ -45,9 +44,9 @@ export default function AboutSection() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
-            className="grid grid-cols-2 gap-4"
+            className="w-full"
           >
-            <div className="glass-image-container">
+            {/* <div className="glass-image-container">
               <Image
                 src={`${ASSET_PREFIX}/image/img_rectangle_5.png`}
                 width={300}
@@ -74,6 +73,8 @@ export default function AboutSection() {
                 className="rounded-lg"
               />
             </div>
+             */}
+            <ImageGallerySlider />
           </motion.div>
         </div>
       </div>
