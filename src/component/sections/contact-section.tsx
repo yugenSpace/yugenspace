@@ -16,14 +16,12 @@ export default function ContactSection() {
             viewport={{ once: true }}
           >
             <div className="glass-badge mb-4">Get Started</div>
-            <h2 className="font-display text-4xl font-bold tracking-tight mb-6">
-              Book a demo
+            <h2 className="capitalize font-display text-4xl font-bold tracking-tight mb-6">
+              contact us
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mb-6"></div>
             <p className="text-lg text-white/70 mb-6">
-              Experience the power of space technology in soil analysis.
-              Schedule a demo to see how our platform can transform your
-              agricultural practices.
+              Send us a message and we will get back to you as soon as possible!
             </p>
             <div className="glass-panel p-6 rounded-xl">
               <h3 className="font-display text-xl mb-4">Contact Information</h3>
@@ -39,7 +37,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="text-sm text-white/70">Headquarters:</p>
-                  <p className="text-white capitalize">Tübingen, germany</p>
+                  <p className="text-white capitalize">Tübingen, Germany</p>
                 </div>
               </div>
             </div>

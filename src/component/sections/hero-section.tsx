@@ -70,9 +70,8 @@ export default function HeroSection() {
 
           <div className="w-16 sm:w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mb-6 mx-auto md:mx-0"></div>
 
-          <p className="text-base sm:text-lg md:text-xl text-white/80 max-w-lg md:max-w-xl mb-8 mx-auto md:mx-0">
-            We do the complex satellite data processing. You get the valuable
-            insights
+          <p className="text-base sm:text-medium md:text-lg text-white/80 max-w-lg md:max-w-xl mb-8 mx-auto md:mx-0">
+           Through our AI analysis platform and hyperspectral sattellite data.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">

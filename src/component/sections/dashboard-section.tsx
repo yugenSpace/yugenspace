@@ -20,7 +20,7 @@ export default function DashboardSection() {
       {/* <StarsBackground /> */}
       {/* <SpaceWaves /> */}
       <PageHeader
-        title={"Geospatial Analysis"}
+        title={"AI Analysis Platform"}
         badgeText="Proprietary Technology"
         // description="Analyzing satellite images now will be as simple as a Google search."
         showBorder={true}
@@ -35,23 +35,23 @@ export default function DashboardSection() {
             viewport={{ once: true }}
             className="text-center md:text-left"
           >
-            <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight mb-4 md:mb-6">
-              Vision Platform
+            <h2 className="uppercase font-display text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight mb-4 md:mb-6">
+              Vision
             </h2>
             <div className="w-16 sm:w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mb-4 md:mb-6 mx-auto md:mx-0"></div>
             <p className="text-base sm:text-lg md:text-xl text-white/80 mb-6 leading-relaxed">
-              Analyzing satellite images now will be as simple as a Google
-              search.
+              <strong className="uppercase ml-1">vision </strong> makes
+              analyzing satellite images as simple as a Google search.
             </p>
 
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="h-12 w-12 rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center shadow-lg shadow-blue-500/20 text-black font-bold text-lg">
+                <div className="flex-shrink-0 h-12 w-12 rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center shadow-lg shadow-blue-500/20 text-black font-bold text-lg">
                   1
                 </div>
                 <div className="text-start">
                   <h3 className="font-display text-lg md:text-xl md:font-medium mb-2">
-                    Complex Processing
+                    Complex processing made easy.
                   </h3>
                   <p className="text-base md:text-lg text-white/70">
                     {`   We do the complex satellite data processing so you don't
@@ -60,16 +60,16 @@ export default function DashboardSection() {
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="h-12 w-12 rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center shadow-lg shadow-blue-500/20 text-black font-bold text-lg">
+                <div className="flex-shrink-0 h-12 w-12 min-w-[3rem] min-h-[3rem] rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center shadow-lg shadow-blue-500/20 text-black font-bold text-lg">
                   2
                 </div>
                 <div className="text-start">
                   <h3 className="font-display text-lg md:text-xl md:font-medium mb-2">
-                    Valuable Insights
+                    Valuable Insights in Minutes
                   </h3>
                   <p className="text-base md:text-lg text-white/70">
-                    You get the valuable insights delivered in an
-                    easy-to-understand format.
+                    Type your question and unlock valuable insights in minutes{" "}
+                    <br></br> — 10x faster and easier than traditional methods.
                   </p>
                 </div>
               </div>

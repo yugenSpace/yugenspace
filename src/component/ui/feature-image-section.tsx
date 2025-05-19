@@ -43,7 +43,7 @@ export default function FeatureCardImage({
           </div>
           <Button size="lg" variant="glass" className="text-white font-medium">
             <Link href="https://docs.google.com/forms/d/1S5d45yOn69_FFaIwPf51gjLZ6ZHdawmwaZThjRo_32s/viewform?edit_requested=true">
-              Read More
+              Learn More
             </Link>
           </Button>
         </div>

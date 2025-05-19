@@ -12,12 +12,12 @@ export default function Home() {
 
       <DashboardSection />
       <FeaturesSection />
-      <PageHeader
+      {/* <PageHeader
         title="About Yugen Space"
         description="Learn about our mission to address soil degradation through space technology"
         color="white"
         showBorder={true}
-      />
+      /> */}
       <AboutSection />
       <PageHeader
         title="Contact Us"

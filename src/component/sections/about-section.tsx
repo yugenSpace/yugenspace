@@ -20,20 +20,20 @@ export default function AboutSection() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className="glass-badge mb-4">Our Mission</div>
+            <div className="glass-badge mb-4 capitalize">Our Vision</div>
             <h2 className="font-display text-4xl font-bold tracking-tight mb-6">
-              About Yugen Space
+              Yugen Space
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mb-6"></div>
             <p className="text-lg text-white/70 mb-6">
-              Yugen Space is a space-tech start-up aiming to leverage the
-              advances in space sciences to tackle global crises. Our mission on
-              hand is to address the soil degradation crisis by precise soil
-              monitoring, using advanced satellites and developing smart
-              analysis systems to democratize earth observation.
+              {`We tackle global challenges from the ground up—starting with
+              soil—by unlocking the full potential of space. We’re building
+              intelligent satellite systems that make Earth observation
+              radically simple and accessible, empowering every individual on
+              the planet with space-driven insights.`}
             </p>
             <blockquote className="border-l-4 border-blue-500 pl-6 italic text-xl font-display bg-white/5 backdrop-blur-sm p-4 rounded-r-lg mb-8">
-              {`Grounded in Earth, Elevated by Space`}
+              {`Grounded on Earth, elevated by space.`}
             </blockquote>
             <Button variant="glass">
               <Link href="/contact">LEARN MORE</Link>
@@ -49,7 +49,7 @@ export default function AboutSection() {
           >
             <div className="glass-image-container">
               <Image
-                 src={`${ASSET_PREFIX}/image/img_rectangle_5.png`}
+                src={`${ASSET_PREFIX}/image/img_rectangle_5.png`}
                 width={300}
                 height={300}
                 alt="Primary Image"
@@ -58,7 +58,7 @@ export default function AboutSection() {
             </div>
             <div className="glass-image-container">
               <Image
-                 src={`${ASSET_PREFIX}/image/img_rectangle_6.png`}
+                src={`${ASSET_PREFIX}/image/img_rectangle_6.png`}
                 width={300}
                 height={300}
                 alt="Secondary Image"
@@ -67,7 +67,7 @@ export default function AboutSection() {
             </div>
             <div className="glass-image-container col-span-2">
               <Image
-                 src={`${ASSET_PREFIX}/image/img_rectangle_8.png`}
+                src={`${ASSET_PREFIX}/image/img_rectangle_8.png`}
                 width={600}
                 height={300}
                 alt="Tertiary Image"

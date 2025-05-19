@@ -20,22 +20,23 @@ export default function FeaturesSection() {
             hyperspectral imaging for advanced soil analysis"
           showBorder={true}
         />
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           <FeatureCardImage
             imageSlug={`${ASSET_PREFIX}/image/chat-field.png`}
-            title="Precise Soil Nutrient and Mineral Maps"
-            description="Get a detailed analysis of your soil composition through advanced satellite imaging."
+            title="Early Soil Degradation Alerts"
+            description="Spot erosion, nutrient loss, or chemical stress before it’s visible. Act early. Restore faster."
             altText="Descriptive text for the image"
           />
           <FeatureCardImage
             imageSlug={`${ASSET_PREFIX}/image/soil-nutrition.png`}
-            title="Monitor Soil Health Regularly"
-            description="Keep track of your soil's health with regular updates and comprehensive analysis."
+            title="Soil Performance Tracking"
+            description="Monitor changes over time and compare across zones and seasons. Know what’s working and where."
           />
           <FeatureCardImage
             imageSlug={`${ASSET_PREFIX}/image/fertilizer-cost.png`}
-            title="Save on Fertilizer Costs"
-            description="Optimize your fertilizer usage based on precise soil needs, saving money and resources."
+            title="Precision Land Management"
+            description="Map nutrients and minerals to optimize inputs and reduce waste. Make smarter decisions across every field."
           />
         </div>
       </div>
