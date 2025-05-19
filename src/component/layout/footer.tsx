@@ -9,8 +9,8 @@ export default function Footer() {
     <div className="w-full flex flex-col justify-center items-center">
       <footer className=" border-t border-white/10 py-12">
         <div className="container px-4 md:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="space-y-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="w-full md:min-w-96 space-y-4">
               <Link
                 href={PAGE_ROUTES.HOME.path}
                 className="flex items-center gap-2"
@@ -28,8 +28,7 @@ export default function Footer() {
                 </span> */}
               </Link>
               <p className="text-sm text-white/70 max-w-xs">
-                Leveraging advances in space sciences to tackle global soil
-                degradation through precise monitoring.
+                Making Earth Observation Simple.
               </p>
             </div>
 
@@ -132,7 +131,7 @@ export default function Footer() {
 
           <div className="mt-12 pt-6 border-t border-white/10 flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-white/50">
-              © 2024 Yugen Space. All rights reserved.
+              © 2025 Yugen Space. All rights reserved.
             </p>
             <div className="flex gap-6 mt-4 md:mt-0">
               <Link

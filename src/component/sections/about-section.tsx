@@ -25,9 +25,7 @@ export default function AboutSection() {
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mb-6"></div>
             <p className="text-lg text-white/70 mb-6">
-              {`We tackle global challenges from the ground up—starting with
-              soil—by unlocking the full potential of space. We’re building
-              intelligent satellite systems that make Earth observation
+              {`We’re building intelligent satellite systems that make Earth observation
               radically simple and accessible, empowering every individual on
               the planet with space-driven insights.`}
             </p>

@@ -82,22 +82,22 @@ export default function Header() {
         {isMobileMenuOpen && (
           <div className="fixed top-0 bottom-0 inset-0 z-0 glass-panel-dark flex flex-col items-center justify-center gap-8">
             <Link
-              href={PAGE_ROUTES.DEMO.path}
-              className="font-display text-2xl font-medium uppercase tracking-widest transition-colors hover:text-blue-400;"
+              href={PAGE_ROUTES.FEATURES.path}
+              className="font-display text-lg font-medium uppercase tracking-widest transition-colors hover:text-blue-400;"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {PAGE_ROUTES.FEATURES.title}
             </Link>
             <Link
               href={`#${PAGE_ROUTES.ABOUT.id}`}
-              className="font-display text-2xl font-medium uppercase tracking-widest transition-colors hover:text-blue-400;"
+              className="font-display text-lg font-medium uppercase tracking-widest transition-colors hover:text-blue-400;"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {PAGE_ROUTES.ABOUT.title}
             </Link>
             <Link
               href={`#${PAGE_ROUTES.CONTACT.id}`}
-              className="font-display text-2xl font-medium uppercase tracking-widest transition-colors hover:text-blue-400;"
+              className="font-display text-lg font-medium uppercase tracking-widest transition-colors hover:text-blue-400;"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {PAGE_ROUTES.CONTACT.title}
@@ -107,7 +107,7 @@ export default function Header() {
               className="mt-4"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              <Link href={`#${PAGE_ROUTES.FEATURES.id}`}>BOOK DEMO</Link>
+              <Link href={`#${PAGE_ROUTES.DEMO.id}`}>BOOK DEMO</Link>
             </Button>
           </div>
         )}

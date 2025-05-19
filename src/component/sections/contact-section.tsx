@@ -105,7 +105,7 @@ export default function ContactSection() {
                   />
                 </div>
                 <Button className="w-full" variant="glow">
-                  BOOK DEMO
+                  Send Message
                 </Button>
               </form>
             </div>
