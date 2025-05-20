@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Button } from "@/component/ui/Button";
 import { motion } from "framer-motion";
 import { PAGE_ROUTES } from "@/constant/route.constant";
+import { ASSET_PREFIX } from "@/constant/config.constant";
 
 export default function HeroSection() {
   // const [isLoaded, setIsLoaded] = useState(false);
@@ -31,12 +32,13 @@ export default function HeroSection() {
           playsInline
           className="transform scale-x-[-1] absolute w-full h-full object-cover"
         >
-          <source
-            src="https://videos.pexels.com/video-files/1851190/1851190-uhd_2560_1440_25fps.mp4"
-            type="video/mp4"
-          />
+          <source src={`${ASSET_PREFIX}/videos/space.mp4`} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+        <p className="hidden">
+          video from pexels
+          url:https://videos.pexels.com/video-files/1851190/1851190-uhd_2560_1440_25fps.mp4
+        </p>
         <div className="absolute inset-0 bg-black/50"></div>
       </div>
       {/* Light beams */}
@@ -71,7 +73,7 @@ export default function HeroSection() {
           <div className="w-16 sm:w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mb-6 mx-auto md:mx-0"></div>
 
           <p className="text-base sm:text-medium md:text-lg text-white/80 max-w-lg md:max-w-xl mb-8 mx-auto md:mx-0">
-           Through our AI analysis platform and hyperspectral sattellite data.
+            Through our AI analysis platform and hyperspectral sattellite data.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
