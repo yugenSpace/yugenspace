@@ -34,10 +34,19 @@ export default function Footer() {
 
             <div>
               <h3 className="font-display text-lg mb-4">Solutions</h3>
+
               <ul className="space-y-2">
                 <li>
                   <Link
                     href={`#${PAGE_ROUTES.ANALYSIS.id}`}
+                    className="text-sm text-white/70 hover:text-white transition-colors"
+                  >
+                    VISION
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href={`#${PAGE_ROUTES.FEATURES.id}`}
                     className="text-sm text-white/70 hover:text-white transition-colors"
                   >
                     Soil Analysis
@@ -48,15 +57,7 @@ export default function Footer() {
                     href={`#${PAGE_ROUTES.FEATURES.id}`}
                     className="text-sm text-white/70 hover:text-white transition-colors"
                   >
-                    Crop Yield Prediction
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href={`#${PAGE_ROUTES.FEATURES.id}`}
-                    className="text-sm text-white/70 hover:text-white transition-colors"
-                  >
-                    Fertilizer Optimization
+                    ⁠Precise Land Management
                   </Link>
                 </li>
               </ul>
