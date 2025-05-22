@@ -27,6 +27,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="description"
+          content="Yugen Space is a space-tech startup aimed at making Earth Observation simple. Through our AI satellite analysis platform and proprietary hyperspectral satellites, we want to empower every individual on the planet with space data - starting with the use case of soil monitoring."
+        />
+        {/* You can add more SEO meta tags here if needed */}
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
