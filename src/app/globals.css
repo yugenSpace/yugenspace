@@ -41,7 +41,7 @@ body {
 /* google font */
 @font-face {
   font-family: "Polaris";
-  src: url("/yugenspace/font/PolarisRegular.ttf") format("truetype");
+  src: url("/font/PolarisRegular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -50,7 +50,7 @@ body {
   font-family: "Open Sans";
   font-display: swap;
   font-style: normal;
-  src: url("/yugenspace/font/OpenSans-Bold.ttf");
+  src: url("/font/OpenSans-Bold.ttf");
 
   font-weight: 700;
 }
@@ -58,14 +58,15 @@ body {
   font-family: "Open Sans";
   font-display: swap;
   font-style: normal;
-  src: url("/yugenspace/font/OpenSans-Regular.ttf");
+  src: url("/font/OpenSans-Regular.ttf");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "NightSpace";
-  src: url("/yugenspace/font/NightSpace.ttf") format("truetype"),
-    url("/yugenspace/font/NightSpace.otf") format("opentype");
+  src:
+    url("/font/NightSpace.ttf") format("truetype"),
+    url("/font/NightSpace.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
