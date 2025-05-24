@@ -25,9 +25,7 @@ export default function AboutSection() {
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mb-6"></div>
             <p className="text-lg text-white/70 mb-6">
-              {`We’re building intelligent satellite systems that make Earth observation
-              radically simple and accessible, empowering every individual on
-              the planet with space-driven insights.`}
+              {`We’re building intelligent satellite systems that make Earth observation radically simple and accessible, empowering every individual on the planet with space-driven insights.`}
             </p>
             <blockquote className="border-l-4 border-blue-500 pl-6 italic text-xl font-display bg-white/5 backdrop-blur-sm p-4 rounded-r-lg mb-8">
               {`Grounded on Earth, elevated by space.`}

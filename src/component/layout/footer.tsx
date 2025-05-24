@@ -104,8 +104,10 @@ export default function Footer() {
                   <span className="sr-only">Twitter</span>
                 </Link> */}
                 <Link
-                  href="#"
+                  href="https://www.linkedin.com/company/yugenspace/"
                   className="glass-icon p-2 rounded-full hover:bg-white/10 transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <Linkedin size={18} />
                   <span className="sr-only">LinkedIn</span>

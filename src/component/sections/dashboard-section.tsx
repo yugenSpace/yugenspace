@@ -54,8 +54,7 @@ export default function DashboardSection() {
                     Complex processing made easy.
                   </h3>
                   <p className="text-base md:text-lg text-white/70">
-                    {`   We do the complex satellite data processing so you don't
-                    have to.`}
+                    {`We do the complex satellite data processing so you don't have to.`}
                   </p>
                 </div>
               </div>
