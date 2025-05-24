@@ -1,6 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
 import { Button } from "../ui/Button";
+import Link from "next/link";
+import { PAGE_ROUTES } from "@/constant/route.constant";
 
 export default function ContactSection() {
   return (
@@ -50,7 +52,7 @@ export default function ContactSection() {
             viewport={{ once: true }}
           >
             <div className="glass-panel p-8 rounded-xl">
-              <form className="space-y-6">
+              <div className="space-y-6">
                 <div className="space-y-2">
                   <label
                     htmlFor="name"
@@ -104,10 +106,16 @@ export default function ContactSection() {
                     placeholder="Tell us about your needs"
                   />
                 </div>
-                <Button className="w-full" variant="glow">
-                  Send Message
+                <Button
+                  size="lg"
+                  variant="glow"
+                  className="text-black font-medium"
+                >
+                  <Link href={PAGE_ROUTES.DEMO.path} target="_blank">
+                    Send Message
+                  </Link>
                 </Button>
-              </form>
+              </div>
             </div>
           </motion.div>
         </div>

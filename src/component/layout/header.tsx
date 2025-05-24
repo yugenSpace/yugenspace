@@ -82,7 +82,7 @@ export default function Header() {
         {isMobileMenuOpen && (
           <div className="fixed top-0 bottom-0 inset-0 z-0 glass-panel-dark flex flex-col items-center justify-center gap-8">
             <Link
-              href={`#${PAGE_ROUTES.FEATURES.path}`}
+              href={`#${PAGE_ROUTES.ANALYSIS.id}`}
               className="font-display text-lg font-medium uppercase tracking-widest transition-colors hover:text-blue-400;"
               onClick={() => setIsMobileMenuOpen(false)}
             >
