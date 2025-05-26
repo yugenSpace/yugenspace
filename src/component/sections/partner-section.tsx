@@ -1,37 +1,41 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-// import PageHeader from "../ui/page-header";
+import { motion, useAnimation } from "framer-motion";
 import SpaceParticles from "../ui/space-particles";
 import PageHeader from "../ui/page-header";
 
 export default function PartnerSection() {
   const scrollRef = useRef<HTMLDivElement>(null);
+  const [containerWidth, setContainerWidth] = useState(0);
+  const [contentWidth, setContentWidth] = useState(0);
+  const controls = useAnimation();
 
   useEffect(() => {
-    const scrollContainer = scrollRef.current;
-    if (!scrollContainer) return;
-
-    let animationId: number;
-
-    const scroll = () => {
-      if (scrollContainer) {
-        scrollContainer.scrollLeft += 0.8;
-        // Reset scroll position for infinite loop
-        if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth / 2) {
-          scrollContainer.scrollLeft = 0;
-        }
-      }
-      animationId = requestAnimationFrame(scroll);
-    };
-
-    animationId = requestAnimationFrame(scroll);
-
-    return () => {
-      cancelAnimationFrame(animationId);
-    };
+    if (!scrollRef.current) return;
+    const container = scrollRef.current;
+    setContainerWidth(container.offsetWidth);
+    setContentWidth(container.scrollWidth / 3); // since we repeat 3 times
   }, []);
+
+  useEffect(() => {
+    if (!containerWidth || !contentWidth) return;
+    const animate = async () => {
+      while (true) {
+        await controls.start({
+          x: -contentWidth,
+          transition: {
+            duration: 30,
+            ease: "linear",
+          },
+        });
+        controls.set({ x: 0 });
+      }
+    };
+    animate();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [containerWidth, contentWidth]);
 
   const partners = [
     {
@@ -130,65 +134,40 @@ export default function PartnerSection() {
           <div className="absolute right-0 top-0 w-20 h-full bg-gradient-to-l from-black/50 to-transparent z-10 pointer-events-none" />
 
           {/* Scrolling container with enhanced styling */}
-          <div
-            ref={scrollRef}
-            className="flex overflow-hidden whitespace-nowrap py-8"
-            style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-          >
-            {/* Render partners multiple times for infinite scroll */}
-            {[...Array(3)].map((_, setIndex) =>
-              partners.map((partner, index) => (
-                <div
-                  key={`${setIndex}-${index}`}
-                  className="flex-shrink-0 mx-4 md:mx-8 group cursor-pointer transition-all duration-300 md:hover:scale-105"
-                >
+          <div className="relative w-full overflow-hidden">
+            <motion.div
+              ref={scrollRef}
+              className="flex whitespace-nowrap py-8"
+              animate={controls}
+              initial={{ x: 0 }}
+              style={{ willChange: "transform" }}
+            >
+              {/* Render partners multiple times for infinite scroll */}
+              {[...Array(3)].map((_, setIndex) =>
+                partners.map((partner, index) => (
                   <div
-                    className="px-4 md:px-7 py-2 md:py-6 bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl md:hover:border-blue-500/50 md:hover:bg-slate-800/70 transition-all duration-300 flex flex-col items-center justify-center"
-                    // style={{ width: 260, height: 140 }}
+                    key={`${setIndex}-${index}`}
+                    className="flex-shrink-0 mx-4 md:mx-8 group cursor-pointer transition-all duration-300 md:hover:scale-105"
                   >
-                    <div className="flex items-center justify-center">
-                      <div className="w-36 h-20 md:w-52 md:h-24   flex items-center justify-center bg-white rounded-lg shadow border border-gray-200 p-2 overflow-hidden">
-                        <Image
-                          src={partner.logo}
-                          alt={`${partner.name} logo`}
-                          width={180}
-                          height={62}
-                          className="object-contain"
-                          loading="lazy"
-                          style={{ maxWidth: "100%", maxHeight: "100%" }}
-                        />
+                    <div className="px-4 md:px-7 py-2 md:py-6 bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl md:hover:border-blue-500/50 md:hover:bg-slate-800/70 transition-all duration-300 flex flex-col items-center justify-center">
+                      <div className="flex items-center justify-center">
+                        <div className="w-36 h-20 md:w-52 md:h-24 flex items-center justify-center bg-white rounded-lg shadow border border-gray-200 p-2 overflow-hidden">
+                          <Image
+                            src={partner.logo}
+                            alt={`${partner.name} logo`}
+                            width={180}
+                            height={62}
+                            className="object-contain"
+                            loading="lazy"
+                            style={{ maxWidth: "100%", maxHeight: "100%" }}
+                          />
+                        </div>
                       </div>
                     </div>
-                    {/* <div className="flex items-center justify-center mb-2">
-                      <div className="w-14 h-14 rounded-full border-2 border-blue-400 flex items-center justify-center bg-gradient-to-br from-blue-500/20 to-green-500/20 overflow-hidden">
-                        <Image
-                          width={48}
-                          height={48}
-                          src={partner.logo}
-                          className="object-cover rounded-full"
-                          alt={`${partner.name} logo`}
-                          loading="lazy"
-                          style={{ objectFit: "cover" }}
-                        />
-                      </div>
-                    </div> */}
-                    {/* <div className="flex flex-col items-center">
-                      <div className="text-xl font-bold text-white whitespace-nowrap group-hover:text-blue-400 transition-colors">
-                        {partner.name}
-                      </div>
-                      {partner.subtitle && (
-                        <div className="text-sm font-semibold text-white whitespace-nowrap group-hover:text-blue-400 transition-colors">
-                          {partner.subtitle}
-                        </div>
-                      )}
-                      <div className="text-xs text-slate-400 mt-1 whitespace-nowrap text-center">
-                        {partner.tagline}
-                      </div>
-                    </div> */}
                   </div>
-                </div>
-              ))
-            )}
+                ))
+              )}
+            </motion.div>
           </div>
         </div>
       </div>
