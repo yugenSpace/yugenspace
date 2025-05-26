@@ -16,8 +16,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Yugen Space",
-  description: "Making Earth Observation Simple.",
+  title: "Yugen Space: AI-powered Earth Observation",
+  description:
+    "Yugen Space makes Earth Observation accessible via AI & hyperspectral satellites. Transforming space data into actionable insights—beginning with soil health.",
 };
 
 export default function RootLayout({
@@ -30,9 +31,12 @@ export default function RootLayout({
       <head>
         <meta
           name="description"
-          content="Yugen Space is a space-tech startup aimed at making Earth Observation simple. Through our AI satellite analysis platform and proprietary hyperspectral satellites, we want to empower every individual on the planet with space data - starting with the use case of soil monitoring."
+          content="Yugen Space makes Earth Observation accessible via AI & hyperspectral satellites. Transforming space data into actionable insights—beginning with soil health."
         />
-        {/* You can add more SEO meta tags here if needed */}
+        <meta
+          name="google-site-verification"
+          content="CFb6lH1520qEWRbWXGELUn0hoNXdxnG4637a5iqwN1c"
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

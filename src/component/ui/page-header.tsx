@@ -48,7 +48,7 @@ export default function PageHeader({
               ></div>
             )}
             {description && (
-              <p className="max-w-md sm:max-w-lg md:max-w-2xl mx-auto text-sm sm:text-base md:text-lg text-white/70">
+              <p className="text-slate-400 text-lg max-w-2xl mx-auto leading-relaxed sm:max-w-lg md:max-w-2xl sm:text-base md:text-lg ">
                 {description}
               </p>
             )}
