@@ -29,8 +29,12 @@ export default function PageHeader({
         >
           <div className={`text-center mb-8 sm:mb-12 md:mb-16`}>
             {badgeText && (
-              <div className="glass-badge mx-auto mb-4 text-sm sm:text-base md:text-lg">
-                {badgeText}
+              <div className="flex items-center justify-center mb-6">
+                <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse mr-4" />
+                <span className="text-blue-400 text-sm font-medium tracking-widest uppercase">
+                  {badgeText}
+                </span>
+                <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse ml-4" />
               </div>
             )}
             {title && (
@@ -48,7 +52,7 @@ export default function PageHeader({
               ></div>
             )}
             {description && (
-              <p className="text-slate-400 text-lg max-w-2xl mx-auto leading-relaxed sm:max-w-lg md:max-w-2xl sm:text-base md:text-lg ">
+              <p className="max-w-96 text-slate-400 text-lg mx-auto leading-relaxed sm:max-w-lg md:max-w-2xl sm:text-base md:text-lg ">
                 {description}
               </p>
             )}

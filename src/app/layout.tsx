@@ -31,7 +31,7 @@ export default function RootLayout({
       <head>
         <meta
           name="description"
-          content="Yugen Space makes Earth Observation accessible via AI & hyperspectral satellites. Transforming space data into actionable insights—beginning with soil health."
+          content="Yugen Space is a space-tech startup aimed at making Earth Observation simple. Through our AI satellite analysis platform and proprietary hyperspectral satellites, we want to empower every individual on the planet with space data - starting with the use case of soil monitoring."
         />
         <meta
           name="google-site-verification"
