@@ -67,7 +67,7 @@ export default function Header() {
         </nav>
 
         <Button variant="glow" className="hidden md:inline-flex text-black">
-          <Link href={PAGE_ROUTES.DEMO.path}>Book Demo</Link>
+          <Link href={PAGE_ROUTES.WAITLIST.path}>Join Waitlist</Link>
         </Button>
 
         {/* Mobile Menu Button */}
@@ -94,7 +94,7 @@ export default function Header() {
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {PAGE_ROUTES.ABOUT.title}
-            </Link>
+            </Link>``
             <Link
               href={`#${PAGE_ROUTES.CONTACT.id}`}
               className="font-display text-lg font-medium uppercase tracking-widest transition-colors hover:text-blue-400;"
@@ -107,7 +107,7 @@ export default function Header() {
               className="mt-4"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              <Link href={`#${PAGE_ROUTES.DEMO.id}`}>BOOK DEMO</Link>
+              <Link href={`${PAGE_ROUTES.WAITLIST.path}`}>JOIN WAITLIST</Link>
             </Button>
           </div>
         )}

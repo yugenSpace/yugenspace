@@ -111,8 +111,8 @@ export default function ContactSection() {
                   variant="glow"
                   className="text-black font-medium"
                 >
-                  <Link href={PAGE_ROUTES.DEMO.path} target="_blank">
-                    Send Message
+                  <Link href={PAGE_ROUTES.WAITLIST.path} target="_blank">
+                    Join Waitlist
                   </Link>
                 </Button>
               </div>

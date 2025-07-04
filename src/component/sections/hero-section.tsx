@@ -78,8 +78,8 @@ export default function HeroSection() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <Button size="lg" variant="glow" className="text-black font-medium">
-              <Link href={PAGE_ROUTES.DEMO.path} target="_blank">
-                {PAGE_ROUTES.DEMO.title}
+              <Link href={PAGE_ROUTES.WAITLIST.path} target="_blank">
+                {PAGE_ROUTES.WAITLIST.title}
               </Link>
             </Button>
             <Button size="lg" variant="glass">
